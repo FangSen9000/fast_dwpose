@@ -31,7 +31,7 @@ detector = DWposeDetector(device=device)
 input_image = Image.open("assets/pose.png").convert("RGB")
 
 
-#####---------Get both the skeleton image
+#####---------Get the skeleton image
 # SF: skeleton should be a kind of img 
 skeleton = detector(input_image, output_type="pil", include_hands=True, include_face=True)
 # Save the skeleton image
